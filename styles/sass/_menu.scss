@@ -1,0 +1,20 @@
+.menuWrapper {
+  width: 450px;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  z-index: 10;
+  padding: 0px 100px;
+  background-color: #fff;
+}
+.menu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+li a {
+  padding: 10px;
+  margin: 10px;
+  text-decoration: none;
+}

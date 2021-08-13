@@ -1,0 +1,37 @@
+.skillContainer {
+  flex-direction: column;
+}
+.skillContainer,
+.otherSkills ul,
+.codingSkills ul {
+  display: flex;
+}
+.skillContainer,
+.codingSkills {
+  flex-direction: column;
+  gap: 10px;
+}
+.codingSkills ul,
+.otherSkills ul {
+  flex-direction: row;
+  font-size: 4rem;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.codingSkills,
+.otherSkills {
+  border: 2px solid #767676;
+  border-radius: 25px;
+  padding: 0px 50px 50px 50px;
+}
+.codingSkills h4,
+.otherSkills h4 {
+  top: 0;
+  left: 20px;
+  color: #767676;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+.skillContainer p {
+  text-align: right;
+}

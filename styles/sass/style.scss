@@ -1,0 +1,93 @@
+@import "setup";
+@import "menu";
+@import "home";
+@import "about";
+@import "skills";
+@import "projects";
+@import "contact";
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+body {
+  color: #767676;
+  font-family: "Mulish", sans-serif;
+}
+ul,
+li {
+  list-style-type: none;
+  list-style-position: inside;
+  margin: 0;
+  padding: 0;
+}
+p {
+  font-weight: 300;
+  font-style: italic;
+}
+h1,
+h2,
+h3,
+h4 {
+  color: black;
+}
+h1 {
+  font-weight: 900;
+  font-size: 3.5rem;
+  font-style: bold;
+}
+h3 {
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+h2 {
+  font-weight: 800;
+  font-size: 3rem;
+}
+.wrapper {
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  clear: both;
+  overflow: hidden;
+}
+.mainContentWrapper {
+  width: 450px;
+  flex: auto;
+  align-items: center;
+  flex-direction: column;
+  z-index: 10;
+  padding: 0px 100px;
+  background-color: rgb(245, 244, 244);
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+.spaceHolder {
+  width: 450px;
+  height: 100vh;
+  padding: 0px 100px;
+}
+.content {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+}
+button {
+  text-decoration: none;
+  width: 200px;
+  color: white;
+  background-color: black;
+  padding: 9px 40px 14px 40px;
+  font-style: italic;
+  font-family: Montserrat;
+  border: none;
+  display: inline-block;
+  cursor: pointer;
+}
+.container {
+  width: 60%;
+  display: flex;
+}

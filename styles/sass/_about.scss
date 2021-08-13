@@ -1,0 +1,17 @@
+.aboutContentWrapper {
+  flex-direction: column;
+}
+.aboutContent {
+  display: flex;
+  flex-direction: column;
+}
+.aboutImage {
+  width: 100%;
+  height: 300px;
+}
+.aboutImage img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: 60% -200px;
+}

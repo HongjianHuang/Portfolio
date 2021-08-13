@@ -1,0 +1,21 @@
+.contactContainer {
+  flex-direction: column;
+}
+.contactContainer form {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.contactContainer input {
+  height: 40px;
+}
+.contactContainer textarea {
+  height: 300px;
+}
+.contactContainer input,
+.contactContainer textarea {
+  width: 100%;
+}
+.contactContainer span {
+  color: red;
+}
