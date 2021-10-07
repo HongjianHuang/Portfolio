@@ -649,9 +649,9 @@ h2 {
   z-index: 10;
   padding: 0px 100px;
   background-color: #f5f4f4;
-  overflow-y: scroll;
   -ms-scroll-snap-type: y mandatory;
       scroll-snap-type: y mandatory;
+  overflow-y: scroll;
 }
 
 .spaceHolder {
@@ -692,4 +692,61 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.modalBackground {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 100;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: visibility 0s opacity 0.5s;
+  transition: visibility 0s opacity 0.5s;
+}
+
+.modal {
+  position: relative;
+  background-color: white;
+  width: 70%;
+  height: 70vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.backgroundActive {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modalClose {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.pdf {
+  width: 90%;
+  height: 90%;
 }
