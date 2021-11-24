@@ -270,7 +270,7 @@ html {
 }
 
 .menuWrapper {
-  width: 450px;
+  width: 30%;
   height: 100vh;
   position: fixed;
   display: -webkit-box;
@@ -282,6 +282,7 @@ html {
   z-index: 10;
   padding: 0px 100px;
   background-color: #fff;
+  max-width: 450px;
 }
 
 .menu ul {
@@ -413,6 +414,7 @@ li a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  height: auto;
 }
 
 .skillContainer,
@@ -581,6 +583,7 @@ html {
 body {
   color: #767676;
   font-family: "Mulish", sans-serif;
+  overflow: scroll;
 }
 
 ul,
@@ -663,13 +666,14 @@ a:link {
 }
 
 .spaceHolder {
-  width: 450px;
+  width: 30%;
   height: 100vh;
   padding: 0px 100px;
+  max-width: 450px;
 }
 
 .content {
-  height: 100vh;
+  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -680,6 +684,7 @@ a:link {
       -ms-flex-align: center;
           align-items: center;
   scroll-snap-align: start;
+  height: auto;
 }
 
 button {
@@ -773,4 +778,52 @@ button {
 
 .fa-linkedin {
   color: #0e76a8;
+}
+
+@media only screen and (max-width: 1300px) {
+  .homeContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .aboutImage {
+    display: none;
+  }
+
+  .project {
+    width: auto;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .spaceHolder,
+.menuWrapper {
+    display: none;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .content,
+.mainContentWrapper {
+    width: auto;
+    padding: 0;
+  }
+
+  .homeImage {
+    height: 20%;
+    width: 20%;
+    min-width: 200px;
+    margin-right: 0;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .social ul {
+    gap: 0px;
+    margin-right: 100px;
+  }
 }

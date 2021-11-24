@@ -12,6 +12,7 @@ html {
 body {
   color: #767676;
   font-family: "Mulish", sans-serif;
+  overflow: scroll;
 }
 ul,
 li {
@@ -70,16 +71,18 @@ a:link {
   overflow-y: scroll;
 }
 .spaceHolder {
-  width: 450px;
+  width: 30%;
   height: 100vh;
   padding: 0px 100px;
+  max-width: 450px;
 }
 .content {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   scroll-snap-align: start;
+  height: auto;
 }
 button {
   text-decoration: none;
@@ -147,4 +150,48 @@ button {
 }
 .fa-linkedin {
   color: #0e76a8;
+}
+@media only screen and (max-width: 1300px) {
+  .homeContainer {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .spaceHolder,
+  .menuWrapper {
+  }
+  .aboutImage {
+    display: none;
+  }
+  .project {
+    width: auto;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .spaceHolder,
+  .menuWrapper {
+    display: none;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .content,
+  .mainContentWrapper {
+    width: auto;
+    padding: 0;
+  }
+  .homeImage {
+    height: 20%;
+    width: 20%;
+    min-width: 200px;
+    //clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    margin-right: 0;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  .social ul {
+    gap: 0px;
+    margin-right: 100px;
+  }
 }

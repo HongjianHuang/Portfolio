@@ -1,5 +1,5 @@
 .menuWrapper {
-  width: 450px;
+  width: 30%;
   height: 100vh;
   position: fixed;
   display: flex;
@@ -7,6 +7,7 @@
   z-index: 10;
   padding: 0px 100px;
   background-color: #fff;
+  max-width: 450px;
 }
 .menu ul {
   display: flex;
