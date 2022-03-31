@@ -8,14 +8,24 @@
   padding: 0px 100px;
   background-color: #fff;
   max-width: 450px;
+  width: 450px;
+}
+.menu{
+  width: 100%;
 }
 .menu ul {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 50px;
+  align-items: center;
 }
-li a {
-  padding: 10px;
-  margin: 10px;
+
+.menu a {
+  padding: 10px 60px 10px 50px;
   text-decoration: none;
+  display: relative;
+}
+
+.menu a:hover{
+  background-color: rgb(245, 244, 244);
 }
