@@ -12,7 +12,8 @@ html {
 body {
   color: #767676;
   font-family: "Mulish", sans-serif;
-  //overflow: scroll;
+  overflow: hidden;
+  height: 100vh;
 }
 ul,
 li {
@@ -61,6 +62,7 @@ a:link {
 }
 .mainContentWrapper {
   //width: 450px;
+  height: 100vh;
   width: 100%;
   flex: auto;
   align-items: center;
@@ -69,8 +71,16 @@ a:link {
   padding: 0px 100px;
   background-color: rgb(245, 244, 244);
   scroll-snap-type: y mandatory;
-  overflow-y: scroll;
+  overflow: scroll;
   margin-left: 450px;
+  section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: center;
+    height: auto;
+  }
 }
 // .spaceHolder {
 //   width: 30%;
@@ -78,14 +88,7 @@ a:link {
 //   padding: 0px 100px;
 //   max-width: 450px;
 // }
-.content {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  scroll-snap-align: start;
-  height: auto;
-}
+
 button {
   text-decoration: none;
   width: 200px;
