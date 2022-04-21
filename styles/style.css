@@ -330,7 +330,7 @@ html {
   visibility: hidden;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1200px) {
   .menuWrapper {
     width: 100vw;
     -webkit-transform-origin: left;
@@ -953,7 +953,7 @@ button {
             flex-direction: column;
   }
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1200px) {
   .aboutImage {
     display: none;
   }
