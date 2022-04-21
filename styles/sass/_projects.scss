@@ -41,3 +41,24 @@
   gap: 10px;
   font-size: 1.2rem;
 }
+@media only screen and (max-width: 1024px) {
+  .projectsList {
+    height: 300px;
+    flex: 2;
+    flex-wrap: nowrap;
+    overflow: auto;
+    width: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+  }
+  .projectsContainer {
+    width: 100%;
+  }
+  .project {
+    width: 500px;
+    scroll-snap-align: center;
+  }
+  .projectImage {
+    width: 200px;
+  }
+}
