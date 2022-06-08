@@ -1,5 +1,6 @@
 .skillContainer {
   flex-direction: column;
+  overflow: visible;
 }
 .skillContainer,
 .otherSkills ul,
@@ -35,7 +36,7 @@
 .skillContainer p {
   text-align: right;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1200px) {
   .skillContainer {
     overflow: scroll;
   }

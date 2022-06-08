@@ -10,6 +10,8 @@
   border: 2px solid #767676;
   border-radius: 25px;
   padding: 50px;
+  height: 750px;
+  overflow-y: scroll;
 }
 .project {
   width: calc(100% / 3 - 30px);
